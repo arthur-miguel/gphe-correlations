@@ -1,6 +1,7 @@
-# GPHE Thermohydraulic Performance Prediction
-
-### Experimental and Machine Learning-Based Predictions of Thermohydraulic Performance in Gasketed Plate Heat Exchangers
+<div align="center">
+  <h1>GPHE Thermohydraulic Performance Prediction</h1>
+  <h3>Experimental and Machine Learning-Based Predictions of Thermohydraulic Performance in Gasketed Plate Heat Exchangers</h3>
+</div>
 
 
 This repository contains the official implementation and trained models for predicting the friction factors ($f$) and Nusselt numbers ($Nu$) of Gasketed Plate Heat Exchangers (GPHEs). The models are based on extensive experimental data covering three distinct corrugation geometries: Chevron, Zigzag, and Four-Quadrant.
@@ -14,7 +15,7 @@ Pre-trained MLPs exported to ONNX format are provided in the `pretrained` folder
 
 * High Accuracy: The provided MLP model outperforms traditional symbolic correlations, even in extrapolation regimes (verified via LOGOCV).
 
-* Cross-Platform: Models are provided in .onnx format for easy deployment.
+* Cross-Platform: Models are provided in .onnx format for easy deployment. Check out [supported frameworks](https://onnx.ai/supported-tools.html).
 
 ### Repo Structure
 
@@ -40,7 +41,7 @@ Pre-trained MLPs exported to ONNX format are provided in the `pretrained` folder
 Requirements:
 
 ```bash
-onnxruntime numpy
+pip install onnxruntime numpy
 ```
 
 Inference:
