@@ -1,7 +1,7 @@
 '''
-This files performs symbolic regression on hydraulic data from PHE experiments using
-the PySR a wrapping of the Julia library SymbolicRegression.jl. It generates a PDF
-with multiple candidate equations that balances complexity and predictive performance.
+This file performs symbolic regression on hydraulic data from PHE experiments using PySR,
+a wrapping of the Julia library SymbolicRegression.jl. It generates a PDF with multiple 
+candidate equations that balances complexity and predictive performance.
 Results are rendered in LaTeX style.
 
 Arthur | arthur-miguel.github.io | 12/22/2025
@@ -276,5 +276,6 @@ for tag, path in datasets.items():
         tex_path = os.path.join(OUT_DIR, f"results_{tag}.tex")
         with open(tex_path, "w") as f: f.write(build_latex_doc(tables))
         compile_pdf(tex_path, OUT_DIR)
+
 
 print("\nDone.")
